@@ -115,6 +115,14 @@ function calculateAllBonus(arr){
     document.getElementById("allBonus").textContent = goToConsole;
     console.log(calculateIndividualEmployeeBonus(employee));
   }
+  let displayName = "";
+  let displayPercent = "";
+  let displayComp = "";
+  let displayBonus = "";
+  document.getElementById("name").textContent = displayName;
+  document.getElementById("percent").textContent = displayPercent;
+  document.getElementById("comp").textContent = displayComp;
+  document.getElementById("bonus").textContent = displayBonus;
 }
 
 
