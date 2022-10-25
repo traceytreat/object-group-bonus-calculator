@@ -94,7 +94,6 @@ function calculateIndividualEmployeeBonus( employee ) {
     };
 
   //return new object with new properties
-  console.log(compensation);
 
   let displayName = "Employee name: " + compensation.name;
   let displayPercent = "Bonus percentage: " + compensation.bonusPercentage * 100 + "%";
@@ -106,6 +105,16 @@ function calculateIndividualEmployeeBonus( employee ) {
   document.getElementById("bonus").textContent = displayBonus;
   return compensation;
 
+}
+
+function calculateAllBonus(arr){
+  //given an array of employees, calculate the individual employee bonus for each employee.
+  console.clear();
+  for (let employee of arr){
+    let goToConsole = "Please check the console for output!";
+    document.getElementById("allBonus").textContent = goToConsole;
+    console.log(calculateIndividualEmployeeBonus(employee));
+  }
 }
 
 
