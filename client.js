@@ -98,8 +98,8 @@ function calculateIndividualEmployeeBonus( employee ) {
 
   let displayName = "Employee name: " + compensation.name;
   let displayPercent = "Bonus percentage: " + compensation.bonusPercentage * 100 + "%";
-  let displayComp = "Total compensation: " + compensation.totalCompensation;
-  let displayBonus = "Total bonus: " + compensation.totalBonus;
+  let displayComp = "Total compensation: $" + compensation.totalCompensation;
+  let displayBonus = "Total bonus: $" + compensation.totalBonus;
   document.getElementById("name").textContent = displayName;
   document.getElementById("percent").textContent = displayPercent;
   document.getElementById("comp").textContent = displayComp;
